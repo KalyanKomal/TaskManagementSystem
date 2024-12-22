@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h2>Admin Dashboard</h2>
+        <button id="logout-btn">Logout</button>
+    </header>
+
+    <div class="container">
+        <section id="create-task-management">
+            <h3>Create Tasks</h3>
+            <button id="create-task-btn">Create New Task</button>
+            <div id="create-task-list"></div>
+        </section>
+        <section id="getall-task-management">
+            <h3>Get All Tasks</h3>
+            <button id="get-task-btn">Get All Task</button>
+            <div id="getall-task-list"></div>
+        </section>
+        <section id="modify-task-management">
+            <h3>Modify Tasks</h3>
+            <button id="modify-task-btn">Modify Task</button>
+            <div id="modify-task-list"></div>
+        </section>
+
+        <section id="user-management">
+            <h3>Manage Users</h3>
+            <button id="add-user-btn">Add New User</button>
+            <div id="user-list"></div>
+        </section>
+        <section id="delete-task-management">
+            <h3>Delete Task</h3>
+            <form id="delete-task-form">
+                <div class="form-group">
+                    <label for="deleteTaskName">Task Name</label>
+                    <input type="text" id="deleteTaskName" class="form-control" placeholder="Enter task name to delete" required>
+                </div>
+                <button type="submit" class="btn btn-danger mt-2">Delete Task</button>
+            </form>
+            <div id="delete-task-message" class="text-success mt-2"></div>
+        </section>
+        <section id="delete-user-management">
+            <h3>Delete User</h3>
+            <form id="delete-user-form">
+                <div class="form-group">
+                    <label for="deleteUserName">User Email</label>
+                    <input type="text" id="deleteUserName" class="form-control" placeholder="Enter user email to delete" required>
+                </div>
+                <button type="submit" class="btn btn-danger mt-2">Delete User</button>
+            </form>
+            <div id="delete-user-message" class="text-success mt-2"></div>
+        </section>
+    </div>
+
+    <script src="js/adminscript.js"></script>
+</body>
+</html>

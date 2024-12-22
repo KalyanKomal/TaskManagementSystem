@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Update New Task</h2>
+        <button id="logout-btn" class="btn btn-danger">Logout</button>
+        <a href="admin.html" class="btn btn-secondary">Back to Admin Dashboard</a>
+    </header>
+
+    <div class="container">
+        <form id="create-task-form">
+            <div class="form-group">
+                <label for="title">Task Title</label>
+                <input type="text" id="title" class="form-control" placeholder="Enter task title" data-email="email"required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" class="form-control" required>
+                    <option value="Pending">Pending</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <!--<div class="form-group">
+                <label for="assignedTo">Assigned To</label>
+                <select id="assignedTo" class="form-control" multiple required>
+                </select>
+            </div>-->
+            <div class="form-group">
+                <label for="assignedTo">Assigned To</label>
+                <div id="assignedTo" class="form-check">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="createdBy">Created By</label>
+                <input type="text" id="createdBy" class="form-control" value="Admin">
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Due Date</label>
+                <input type="datetime-local" id="dueDate" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Task</button>
+        </form>
+
+        <p id="message" class="message"></p>
+    </div>
+
+    <script src="js/admin-update-task.js"></script>
+</body>
+</html>
