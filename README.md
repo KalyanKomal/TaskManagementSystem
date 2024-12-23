@@ -26,7 +26,7 @@ PROJECT FLOW:-
 
 This is the login page.
 
-![image](https://github.com/user-attachments/assets/48807301-9ce6-434e-8e5f-6312dcc287bb)
+![image](https://github.com/user-attachments/assets/1fa5df89-2d74-476e-a302-634ea3369c58)
 
 Here it will check user email and password.If it's ok then it will if role is User or Admin.If admin it will redirect to admin dashboard.Or else it will go to user dashboard.
 
