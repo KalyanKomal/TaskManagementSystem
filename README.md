@@ -8,7 +8,7 @@ https://github.com/KalyanKomal/TaskManagementSystemFrontend.git
 Clone this repository.
 
 BACKEND PART:-
-https://github.com/KalyanKomal/BackendTaskManagementSystem.git
+https://github.com/KalyanKomal/BackendTaskManagement.git
 Clone this repository.
 
 FEATURES:-
